@@ -22,7 +22,7 @@ struct DummyPacket{
 CornFlakes를 이용해 위의 패킷을 구현.<br>
 size, id필드는 자동으로 기입됨.
 ```ruby
-class DummyPacket
+class DummyPacket < Packet
   id PACKET_ID_DUMMY
   int dummy1
   string dummy2, 32 #string length
