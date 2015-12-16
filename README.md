@@ -24,9 +24,9 @@ size, id필드는 자동으로 기입됨.
 ```ruby
 class DummyPacket < Packet
   id PACKET_ID_DUMMY
-  int dummy1
-  string dummy2, 32 #string length
-  string dummy3, 8
+  int :dummy1
+  string :dummy2, 32 #string length
+  string :dummy3, 8
 end
 ```
 
@@ -45,7 +45,7 @@ send pkt.serialize
 __unserialize__
 ```ruby
 def on_recv data
-  pkt = DummyPacket.unserialize data
+  pkt = DummyPacket.deserialize data
   
   puts pkt.dummy1
   puts pkt.dummy2
