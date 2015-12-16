@@ -1,8 +1,8 @@
 CornFlakes
 ==========
 
-packet serializer/unserializer for ruby
-
+packet serializer/unserializer for ruby 
+[![Build Status](https://travis-ci.org/SubwayRocketTeam/CornFlakes.svg?branch=master)](https://travis-ci.org/SubwayRocketTeam/CornFlakes)
 
 
 sample
