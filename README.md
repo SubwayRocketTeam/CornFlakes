@@ -42,7 +42,7 @@ send pkt.serialize
 ```
 
 
-__unserialize__
+__deserialize__
 ```ruby
 def on_recv data
   pkt = DummyPacket.deserialize data
